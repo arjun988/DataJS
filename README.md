@@ -25,7 +25,7 @@ NuminaJS is a comprehensive data science package for JavaScript, providing a wid
 ## Installation
 
 ```bash
-npm install numina-js
+npm install numinajs
 ```
 
 ## Features
@@ -47,7 +47,7 @@ npm install numina-js
 ### Data Reading
 
 ```javascript
-const { readCSV } = require('numina-js');
+const { readCSV } = require('numinajs');
 
 const data = readCSV('path/to/your/file.csv');
 console.log(data);
@@ -56,7 +56,7 @@ console.log(data);
 ### Data Preprocessing
 
 ```javascript
-const { handleMissingValues, detectAndHandleOutliers, normalizeData } = require('numina-js');
+const { handleMissingValues, detectAndHandleOutliers, normalizeData } = require('numinajs');
 
 // Handle missing values
 let processedData = handleMissingValues(data, 'column_name', 'mean');
@@ -71,7 +71,7 @@ processedData = normalizeData(processedData, 'column_name', 'min-max');
 ### Feature Selection
 
 ```javascript
-const { selectFeatures, chiSquareTest, anovaFTest } = require('numina-js');
+const { selectFeatures, chiSquareTest, anovaFTest } = require('numinajs');
 
 // Select features based on correlation
 const selectedFeatures = selectFeatures(data, 'correlation', 0.5);
@@ -86,7 +86,7 @@ const anovaResults = anovaFTest(data, targetColumn);
 ### Data Transformation
 
 ```javascript
-const { transformData } = require('numina-js');
+const { transformData } = require('numinajs');
 
 // Apply log transformation
 const transformedData = transformData(data, 'column_name', 'log');
@@ -95,7 +95,7 @@ const transformedData = transformData(data, 'column_name', 'log');
 ### Handling Imbalanced Data
 
 ```javascript
-const { handleImbalance } = require('numina-js');
+const { handleImbalance } = require('numinajs');
 
 // Oversample minority class
 const balancedData = handleImbalance(data, 'oversample');
@@ -104,7 +104,7 @@ const balancedData = handleImbalance(data, 'oversample');
 ### Supervised Learning Algorithms
 
 ```javascript
-const { linearRegression, logisticRegression, svm, randomForests } = require('numina-js');
+const { linearRegression, logisticRegression, svm, randomForests } = require('numinajs');
 
 // Linear Regression
 const linearModel = linearRegression(data, targetColumn);
@@ -122,7 +122,7 @@ const rfModel = randomForests(data, targetColumn);
 ### Unsupervised Learning Algorithms
 
 ```javascript
-const { kMeans, hierarchicalClustering, dbscan } = require('numina-js');
+const { kMeans, hierarchicalClustering, dbscan } = require('numinajs');
 
 // K-Means Clustering
 const kMeansResult = kMeans(data, 3); // 3 clusters
@@ -137,7 +137,7 @@ const dbscanResult = dbscan(data, 0.5, 5); // epsilon = 0.5, minPoints = 5
 ### Model Evaluation Metrics
 
 ```javascript
-const { accuracy, precision, recall, f1Score, confusionMatrix, specificity, falsePositiveRate, trueNegativeRate, areaUnderROC, meanSquaredError, rootMeanSquaredError, meanAbsoluteError, rSquared } = require('numina-js');
+const { accuracy, precision, recall, f1Score, confusionMatrix, specificity, falsePositiveRate, trueNegativeRate, areaUnderROC, meanSquaredError, rootMeanSquaredError, meanAbsoluteError, rSquared } = require('numinajs');
 
 // Classification metrics
 const accuracyScore = accuracy(trueLabels, predictedLabels);
@@ -160,7 +160,7 @@ const r2 = rSquared(trueValues, predictedValues);
 ### Cross-Validation
 
 ```javascript
-const { kFoldCrossValidation, stratifiedKFoldCrossValidation } = require('numina-js');
+const { kFoldCrossValidation, stratifiedKFoldCrossValidation } = require('numinajs');
 
 // K-Fold Cross-Validation
 const kFoldResults = kFoldCrossValidation(data, labels, model, 5);
@@ -172,7 +172,7 @@ const stratifiedResults = stratifiedKFoldCrossValidation(data, labels, model, 5)
 ### Data Visualization
 
 ```javascript
-const { plotGraph } = require('numina-js');
+const { plotGraph } = require('numinajs');
 
 // Create a bar chart
 const barChartData = {
@@ -190,7 +190,7 @@ plotGraph(800, 600, 'bar', barChartData, { title: { display: true, text: 'Monthl
 ### Data Export
 
 ```javascript
-const { exportToHTML, exportToJSON, exportToPDF } = require('numina-js');
+const { exportToHTML, exportToJSON, exportToPDF } = require('numinajs');
 
 exportToHTML(data, 'output.html');
 exportToJSON(data, 'output.json');
