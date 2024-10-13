@@ -3,6 +3,14 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "keywords": [
+    "data",
+    "data manipulation",
+    "data analysis",
+    "machine learning",
+    "data processing",
+    "javascript"
+  ],
   "scripts": {
     "test": "jest"
   },
